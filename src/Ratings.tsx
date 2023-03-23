@@ -76,7 +76,7 @@ const Ratings: FC<RatingsProps> = ({ value }) => {
 
     return (
         <div className="flex justify-center">
-            <div className="absolute ">
+            <div>
                 <StarGroup />
             </div>
             <div className="absolute">
