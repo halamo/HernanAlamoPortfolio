@@ -11,7 +11,7 @@ import {
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
-            refetchOnWindowFocus: false // prevent focus based refetching of data.
+            refetchOnWindowFocus: false // prevent window focus based refetching of data.
         }
     }
 })
