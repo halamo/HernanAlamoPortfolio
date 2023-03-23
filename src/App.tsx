@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useDebouncedCallback } from "use-debounce";
 import ErrorModal from "./ErrorModal";
 import { useGetActivity } from "./queries/hooks/useGetActivity";
+import Ratings from "./Ratings";
 
 const USDollar = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -107,7 +108,7 @@ function App() {
                                     Accessibility
                                 </dt>
                                 <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                                    {data?.accessibility}
+                                    <Ratings value={data?.accessibility || 0} />
                                 </dd>
                             </div>
                             <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
